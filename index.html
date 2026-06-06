@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project_bat</title>
+    <style>
+        /* Standard styling to center the game board and make it look like a terminal window */
+        body {
+            background-color: #050505; /* Deep cyber black */
+            color: #00ffca;           /* Retro neon green/cyan */
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
 
+        h1 {
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+
+        canvas {
+            border: 2px solid #00ffca;
+            box-shadow: 0 0 15px rgba(0, 255, 202, 0.2);
+            background-color: #000000;
+        }
+
+        .instructions {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PROJECT_BAT // SYSTEM_INIT</h1>
+    
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+
+    <div class="instructions">
+        [ SYSTEM READY ] -> USE ARROW KEYS TO NAVIGATE THE VOID
+    </div>
+
+    <script src="engine.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>
